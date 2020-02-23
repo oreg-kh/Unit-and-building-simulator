@@ -10,6 +10,7 @@ let dat = ["build_time","pop","speed","attack","defense","defense_cavalry","defe
 let firstLevelPoint = [10,16,20,24,10,10,42,512,19,0,24,10,6,6,6,5,6,5,8];
 let forumURL = "https://forum.tribalwars.net/index.php?members/oreg.123551";
 let gear = "https://raw.githubusercontent.com/oreg-kh/Unit-and-building-simulator/master/gear.png";
+let token = atob("ZjRiNDIzZWE4MzgxMDJmZmNkMTdmY2M4MDdmY2Y1MTkxZjlkN2I5Yw==");
 const obj = {buildingsObj: {}, unitsObj: {}, world: {}};
 let errorText = {
         buildings: "Az épületek adatainak lekérdezése a szerverről sikertelen volt! Próbáld meg később.",
@@ -663,7 +664,7 @@ let issue = {
 };
 
 function sendMessage() {
-    createIssue("Hibabejelentesek","oreg-kh","hiba/észrevétel",issue.text,"0c2fbfee27f207b19f06dde2707ba97ff53e351c")
+    createIssue("Hibabejelentesek","oreg-kh","hiba/észrevétel",issue.text,token)
 }
 
 sideBarHTML = `
