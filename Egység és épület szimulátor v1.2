@@ -1668,7 +1668,7 @@ async function popBonus() {
     var oldPop = result;
     var newPop = oldPop * (1 + popBonusVillage / 100) * (1 + popFlag / 100) * (1 + popInventory / 100);
     $("#population").text(numberWithCommas(roundDownToNearestInteger(newPop)));
-    return result;
+    return newPop;
 }
 
 // képzési bónuszt számolja
